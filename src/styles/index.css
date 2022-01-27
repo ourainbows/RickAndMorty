@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #34324a;
+  /* background-image: linear-gradient(to right, #232137, #2b2940, #34324a, #2b2940,#232137); */
+  font-family: 'Creepster', cursive;
+
+}

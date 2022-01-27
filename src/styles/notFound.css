@@ -1,0 +1,28 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notFoundImg {
+  width: 80%;
+  align-items: center;
+  max-width: 800px;
+}
+.error div {
+  font-size: 80px;
+}
+.buttonError {
+  background-color: black;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
