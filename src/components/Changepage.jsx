@@ -1,7 +1,5 @@
 import "../styles/changePage.css"
 function ChangePage({ apiInfo, setApiCharacter }) {
-    // api info -> next , prev
-    // setApi -> no tiene nada | cambia nuestro link
     const prevPage = () => {
         setApiCharacter(apiInfo.prev)
         setTimeout(() => {
@@ -21,5 +19,6 @@ function ChangePage({ apiInfo, setApiCharacter }) {
         </div>
     )
 }
+
 
 export {ChangePage}

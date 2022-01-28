@@ -13,7 +13,7 @@ function Navbar() {
                     <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"}to="/characters">Personajes</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/characters">Personajes</NavLink>
                 </li>
                 {/* remplazar rutas una vez esten terminadas */}
                 <li>

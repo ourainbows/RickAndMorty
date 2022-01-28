@@ -13,11 +13,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/characters" element={<CharactersPage/>} />
-        <Route path="/episodes" element={<Episodes/> }/>
-        <Route path="/locations" element={<Locations/> }/>
-        <Route path="*" element={<NotFound/>}/>
+        <Route path="/RickAndMorty" element={<Home/>} />
+        <Route path="/RickAndMorty/characters" element={<CharactersPage/>} />
+        <Route path="/RickAndMorty/episodes" element={<Episodes/> }/>
+        <Route path="/RickAndMorty/locations" element={<Locations/> }/>
+        <Route path="/RickAndMorty/*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
