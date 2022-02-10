@@ -10,7 +10,7 @@ import { ModalCharacter } from './ModalCharacter';
 
 function App() {
   return (
-    <BrowserRouter basename='RickAndMorty'>
+    <BrowserRouter basename='/RickAndMorty'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<CharactersPage />} />
