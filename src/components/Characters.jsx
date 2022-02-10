@@ -33,7 +33,7 @@ function Characters() {
             </div>
             <ChangePage
                 apiInfo={apiInfo}
-                setApiCharacter={setApiCharacter}
+                setApi={setApiCharacter}
             />
         </>
     );

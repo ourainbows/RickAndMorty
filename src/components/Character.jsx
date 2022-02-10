@@ -1,6 +1,10 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import "../styles/character.css"
+import { ModalCharacter } from "./ModalCharacter"
 
 function Character({ character }) {
+    const [modalStatus, setModalStatus] = useState(false)
     const colors = {
         Human: ["#106ECD", "#03AFC7"],
         Alien: ["#1ACD5F", "#24E232"],
@@ -13,6 +17,9 @@ function Character({ character }) {
         Disease: ["#7a2121", "#9b3636"],
         Robot: ["#2c2c2c", "#645e5e"],
     }
+    const openModal = (() => {
+        setModalStatus(prevstate => !prevstate)
+    })
 
     return (
         <div className="cardCharacter" style={{
@@ -23,7 +30,9 @@ function Character({ character }) {
                 <h2>{character.name}</h2>
                 <p>{character.species}</p>
             </div>
-            <button className="characterButton">Episodios</button>
+            <button onClick={openModal} className="characterButton">Episodes & More</button>
+            {modalStatus && <ModalCharacter characterId={character.id} setModalStatus={setModalStatus}/>}
+            {/* <Link className="characterButton" to={`/RickAndMorty/characters/${character.id}`}>More Info</Link> */}
         </div>
     )
 }

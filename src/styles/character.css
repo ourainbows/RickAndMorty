@@ -31,7 +31,11 @@
   margin: 0;
 }
 .character-info h2 {
+  font-size: 40px;
   margin: 0 10px;
+}
+.character-info p {
+  font-size: 20px;
 }
 .characterButton {
   background-color: rgb(255, 255, 255);
@@ -41,6 +45,11 @@
   height: 30px;
   border-radius: 3px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 .character-button:hover {
   background-color: rgb(216, 213, 213);

@@ -1,13 +1,13 @@
 import "../styles/changePage.css"
-function ChangePage({ apiInfo, setApiCharacter }) {
+function ChangePage({ apiInfo, setApi }) {
     const prevPage = () => {
-        setApiCharacter(apiInfo.prev)
+        setApi(apiInfo.prev)
         setTimeout(() => {
             window.scrollTo(0,0)
         }, 100)
     }
     const nextPage = () => {
-        setApiCharacter(apiInfo.next)
+        setApi(apiInfo.next)
         setTimeout(() => {
             window.scrollTo(0, 0)
         }, 100)
