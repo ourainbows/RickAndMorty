@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {HashRouter, Route, Routes } from "react-router-dom"
 /* import { Navbar } from './Navbar'; */
 import { Home } from '../pages/Home';
 import { EpisodesPage } from '../pages/EpisodesPage';
@@ -10,7 +10,7 @@ import { ModalCharacter } from './ModalCharacter';
 
 function App() {
   return (
-    <BrowserRouter basename='/RickAndMorty'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<CharactersPage />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/*" element={<NotFound />} />
         <Route path="/characters/:id" element={<ModalCharacter />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
