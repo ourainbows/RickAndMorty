@@ -6,18 +6,18 @@ function Navbar() {
     return (
         <nav className="nav">
             <div>
-                <Link to="/RickAndMorty"><img src={logo} alt="logo" /></Link>
+                <Link to="/"><img src={logo} alt="logo" /></Link>
             </div>
             <ul>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/RickAndMorty">Home</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/RickAndMorty/characters">Personajes</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/characters">Personajes</NavLink>
                 </li>
                 {/* remplazar rutas una vez esten terminadas */}
                 <li>
-                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/RickAndMorty/episodes">Episodios</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : "inactive"} to="/episodes">Episodios</NavLink>
                 </li>
             </ul>
         </nav>

@@ -9,10 +9,10 @@ function Home() {
                 <p>El científico brillante pero borracho Rick secuestra a su inquieto nieto adolescente, Morty, para aventuras salvajes en otros mundos y dimensiones alternativas. </p>
                 <div className="home-btns">
                     <div>
-                        <Link className="home-charactes" to="/RickAndMorty/characters">Personajes</Link>
+                        <Link className="home-charactes" to="/characters">Personajes</Link>
                     </div>
                     <div>
-                        <Link className="home-episodes" to="/RickAndMorty/episodes">Episodios</Link>
+                        <Link className="home-episodes" to="/episodes">Episodios</Link>
                     </div>
                 </div>
             </div>

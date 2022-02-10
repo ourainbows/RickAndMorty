@@ -10,16 +10,14 @@ import { ModalCharacter } from './ModalCharacter';
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* <Navbar /> */}
+    <BrowserRouter basename='RickAndMorty'>
       <Routes>
-        <Route path="/RickAndMorty" element={<Home />} />
-        <Route path="/RickAndMorty/characters" element={<CharactersPage />} />
-        <Route path="/RickAndMorty/episodes" element={<EpisodesPage />} />
-        <Route path="/RickAndMorty/*" element={<NotFound />} />
-        <Route path="/RickAndMorty/characters/:id" element={<ModalCharacter />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/characters" element={<CharactersPage />} />
+        <Route path="/episodes" element={<EpisodesPage />} />
+        <Route path="/*" element={<NotFound />} />
+        <Route path="/characters/:id" element={<ModalCharacter />} />
       </Routes>
-      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
