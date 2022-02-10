@@ -1,0 +1,78 @@
+.cardEpisodes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardEpisode {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.S01 {
+  color: white;
+  background-image: linear-gradient(to right, #106ecd, #03afc7);
+}
+.S02 {
+  color: white;
+  background-image: linear-gradient(to right, #1acd5f, #24e232);
+}
+.S03 {
+  color: white;
+  background-image: linear-gradient(to right, #7a2121, #9b3636);
+}
+.S04 {
+  color: white;
+  background-image: linear-gradient(to right, #cd5510, #c78903);
+}
+.S05 {
+  color: white;
+  background-image: linear-gradient(to right, #7a2175, #87369b);
+}
+.cardEpisodeTitle {
+  margin-bottom: 32px;
+}
+.cardEpisodeTitle h2 {
+  margin: 50px 0 8px 0;
+  font-size: 50px;
+}
+.cardEpisodeTitle div {
+  font-size: 20px;
+}
+.cardEpisodeCharacters {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+.containerCharacters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+.containerCharacters img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.episodeSeason {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #e0dede83;
+  font-size: 50px;
+}
+
+@media (max-width: 500px) {
+  .containerCharacters img {
+    width: 22%;
+  }
+}
