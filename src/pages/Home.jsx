@@ -1,13 +1,23 @@
-import calm from "../images/calm.jpg"
+import { Link } from "react-router-dom"
 import "../styles/home.css"
 
 function Home() {
     return (
         <div className="home">
-            <img src={calm} alt="Rick on Calm"/>
-            <p>Calma! Traeremos más contenido para ti proximamente!</p>
+            <div className="home-info">
+                <h1 className="home-tittle">Rick & Morty</h1>
+                <p>El científico brillante pero borracho Rick secuestra a su inquieto nieto adolescente, Morty, para aventuras salvajes en otros mundos y dimensiones alternativas. </p>
+                <div className="home-btns">
+                    <div>
+                        <Link className="home-charactes" to="/RickAndMorty/characters">Personajes</Link>
+                    </div>
+                    <div>
+                        <Link className="home-episodes" to="/RickAndMorty/episodes">Episodios</Link>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
 
-export {Home}
+export { Home }

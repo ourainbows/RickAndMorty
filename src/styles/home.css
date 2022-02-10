@@ -1,15 +1,111 @@
-.home{
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    height: 100vh;
-    
+.home {
+  height: 100vh;
+  background-image: linear-gradient(
+      270deg,
+      #000000 3.48%,
+      rgba(0, 0, 0, 0.9) 45.39%,
+      rgba(0, 0, 0, 0) 87.29%
+    ),
+    url("../images/home.png");
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: center;
+  color: white;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.home img{
-    width: 80%;
+.home-info {
+  width: 40%;
+  margin: 0 1.2rem;
+}
+.home-tittle {
+  margin: 48px 0 40px 0;
+  font-size: 80px;
+  /* color: cyan; */
+  /* text-shadow: -1px 0 rgb(253, 232, 44), 0 1px rgb(253, 232, 44), 1px 0 rgb(253, 232, 44), 0 -1px rgb(253, 232, 44); */
+}
+.home-info p {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+.home-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.home-btns div {
+  border-radius: 5px;
+  display: flex;
+  margin: 0 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+.home-btns div a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-charactes {
+  background-color: white;
+  color: #000000;
+}
+.home-episodes {
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .home-tittle {
+    font-size: 50px;
+  }
+  .home {
+    background-image: linear-gradient(
+        270deg,
+        #000000 3.48%,
+        rgba(0, 0, 0, 0.9) 50.39%,
+        rgba(0, 0, 0, 0) 89.29%
+      ),
+      url("../images/home.png");
+  }
+}
+@media (max-width: 560px) {
+  .home {
+    background-image: linear-gradient(
+        270deg,
+        #000000 3.48%,
+        rgba(0, 0, 0, 0.9) 60.39%,
+        rgba(0, 0, 0, 0) 109.29%
+      ),
+      url("../images/home.png");
+  }
+  .home-info {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .home {
+    background-position: 30%;
+    align-items: center;
+    background-image: linear-gradient(
+        270deg,
+        #000000 3.48%,
+        rgba(0, 0, 0, 0.836) 100.39%,
+        rgba(0, 0, 0, 0) 109.29%
+      ),
+      url("../images/home.png");
+  }
+  .home-info {
+    width: 100%;
+  }
+  .home-btns {
+    flex-direction: column;
+    align-items: center;
+  }
 }

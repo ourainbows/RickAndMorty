@@ -1,8 +1,14 @@
 import { Characters } from "../components/Characters"
+import { Footer } from "../components/Footer"
+import { Navbar } from "../components/Navbar"
 
 function CharactersPage() {
     return (
-        <Characters />
+        <>
+            <Navbar />
+            <Characters />
+            <Footer />
+        </>
     )
 }
 

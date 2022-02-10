@@ -1,9 +1,15 @@
 import { Episodes } from "../components/Episodes"
+import { Footer } from "../components/Footer"
+import { Navbar } from "../components/Navbar"
 
 function EpisodesPage() {
     return (
-        <Episodes/>
+        <>
+            <Navbar />
+            <Episodes />
+            <Footer />
+        </>
     )
 }
 
-export { EpisodesPage}
+export { EpisodesPage }
